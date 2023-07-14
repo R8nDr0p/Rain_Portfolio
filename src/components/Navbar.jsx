@@ -11,7 +11,7 @@ function Navbar() {
   return (
     <nav className="flex justify-between py-3 bg-blue-100 sticky top-0">
       <div className="flex">
-        <p className="text-3xl ps-5 font-[poppins] font-bold ">Rain &nbsp;</p>
+        <p className="text-3xl ps-5 font-[poppins] font-bold ">Rain&nbsp;</p>
         <span className="text-3xl sm:block hidden">| Portfolio</span>
       </div>
       <div className="flex">
