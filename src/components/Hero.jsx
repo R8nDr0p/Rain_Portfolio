@@ -6,10 +6,10 @@ function Hero() {
     <>
       <section className="bg-slate-800">
         <div className="container mx-auto p-4">
-          <div className="row flex flex-wrap items-center sm:flex-nowrap sm:flex-row gap-1 ">
+          <div className="row flex flex-wrap items-center justify-center sm:flex-nowrap sm:flex-row gap-1 ">
             {/* Social Media */}
             <div className="col flex-1">
-              <div className="row flex justify-center sm:flex-wrap gap-6 me-3 ">
+              <div className="row flex  sm:flex-wrap gap-6 me-3 ">
                 <BsGithub className="text-5xl text-sky-200" />
                 <BsFacebook className="text-5xl text-sky-200" />
                 <BsInstagram className="text-5xl text-sky-200" />
