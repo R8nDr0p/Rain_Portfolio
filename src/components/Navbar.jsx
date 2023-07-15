@@ -28,7 +28,7 @@ function Navbar() {
         </ul>
       </div>
       {/* This is the mobile view */}
-      <div className="sm:hidden flex">
+      <div className="sm:hidden flex ">
         <button
           className="items-center px-6"
           onClick={() => {
@@ -42,7 +42,7 @@ function Navbar() {
           )}
         </button>
         {show === false && (
-          <div className="sm:hidden absolute top-[4rem] right-0 w-full bg-blue-200 p-6 rounded flex justify-center shadow-xl">
+          <div className="sm:hidden absolute top-[4rem] right-0 w-full bg-blue-200 p-6 rounded-lg flex justify-center shadow-xl">
             <ul>
               <li className="text-2xl mb-4 cursor-pointer">
                 <NavLink to={"/"}>Home</NavLink>
