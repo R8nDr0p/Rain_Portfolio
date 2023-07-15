@@ -10,9 +10,9 @@ function Hero() {
             {/* Social Media */}
             <div className="col flex-1">
               <div className="row flex justify-center sm:flex-wrap gap-6 me-3 ">
-                <BsGithub className="text-5xl" />
-                <BsFacebook className="text-5xl" />
-                <BsInstagram className="text-5xl" />
+                <BsGithub className="text-5xl text-sky-200" />
+                <BsFacebook className="text-5xl text-sky-200" />
+                <BsInstagram className="text-5xl text-sky-200" />
               </div>
             </div>
             {/* Name and Info */}
@@ -43,20 +43,20 @@ function Hero() {
                 </p>
                 <br />
                 <div className="flex justify-center">
-                  <button className="btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 transition duration-200">
+                  <a className="btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 transition duration-200">
                     See my projects here!
-                  </button>
+                  </a>
                 </div>
               </div>
             </div>
+            {/* IMAGE */}
             <div className="col flex-1 basis-full">
               <div className="row">
                 <div className="col">
-                  <img src={pic1} alt="" />
+                  <img src={pic1} alt="picture of me" className="rounded" />
                 </div>
               </div>
             </div>
-            <div className="col flex-1 basis-[1/4]">email</div>
           </div>
         </div>
       </section>
