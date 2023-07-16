@@ -19,6 +19,7 @@ const About = () => {
               2023, I am a fast learner and I am willing to learn new things.
             </p>
           </div>
+          <hr className="mx-6" />
         </div>
       </div>
     </section>
