@@ -22,13 +22,14 @@ function Skills() {
     >
       <div className="container mx-auto">
         <div className="row flex justify-center">
-          <div className="col">
-            <h1 className="text-6xl text-blue-200">Skills</h1>
+          <div className="col flex flex-col items-center">
+            <h1 className="text-8xl text-blue-300">Skills</h1>
+            <h3 className="text-6xl text-blue-200">What I'm capable of?</h3>
           </div>
         </div>
         <div className="m-8 row flex flex-col gap-10 flex-wrap sm:items-start sm:justify-around sm:flex-row sm:flex-nowrap">
           <div className="col flex flex-col items-center">
-            <h2 className="text-blue-200 text-4xl underline">Front-End</h2>
+            <h2 className="text-blue-200 text-5xl underline">Front-End</h2>
             <div className="row flex flex-col items-center space-x-4">
               <div className="row flex space-x-4 ">
                 <div className="col p-1 mt-3 bg-sky-200 rounded-lg">
@@ -57,7 +58,7 @@ function Skills() {
             </div>
           </div>
           <div className="col flex flex-col items-center">
-            <h2 className="text-blue-200 text-4xl underline">Back End</h2>
+            <h2 className="text-blue-200 text-5xl underline">Back End</h2>
             <div className="row flex flex-col items-center space-x-4">
               <div className="row flex space-x-4">
                 <div className="col p-1 mt-3 bg-sky-200 rounded-lg">
