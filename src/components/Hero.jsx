@@ -17,7 +17,7 @@ function Hero() {
             </div>
             {/* Name and Info */}
             <div className="col flex-1 basis-full">
-              <div className="row">
+              {/* <div className="row">
                 <h1 className="text-6xl text-blue-200">
                   Hi! I am
                   <br />
@@ -47,6 +47,11 @@ function Hero() {
                     See my projects here!
                   </a>
                 </div>
+              </div> */}
+              <div className="row">
+                <div className="col">Logos</div>
+                <div className="col">Names and Info</div>
+                <div className="col">image</div>
               </div>
             </div>
             {/* IMAGE */}
