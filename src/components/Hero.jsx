@@ -10,9 +10,15 @@ function Hero() {
             {/* Social Media */}
             <div className="col flex-1">
               <div className="row flex sm:flex-col gap-6 my-5 sm:me-4 ">
-                <BsGithub className="text-5xl text-sky-200" />
-                <BsFacebook className="text-5xl text-sky-200" />
-                <BsInstagram className="text-5xl text-sky-200" />
+                <a href="https://github.com/R8nDr0p">
+                  <BsGithub className="text-5xl text-sky-200" />
+                </a>
+                <a href="https://www.facebook.com/r8indr0p/">
+                  <BsFacebook className="text-5xl text-sky-200" />
+                </a>
+                <a href="https://www.instagram.com/niardrop/">
+                  <BsInstagram className="text-5xl text-sky-200" />
+                </a>
               </div>
             </div>
             {/* Name and Info */}
