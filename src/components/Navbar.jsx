@@ -1,8 +1,6 @@
-import { NavLink } from "react-router-dom";
 import { FaBars } from "react-icons/fa";
 import { FaRegCircleXmark } from "react-icons/fa6";
 import React, { useState } from "react";
-import { HiOutlineX } from "react-icons/hi";
 import "../styles/navbar.css";
 
 function Navbar() {
@@ -20,6 +18,9 @@ function Navbar() {
         <ul className="list-none sm:flex hidden items-center space-x-4 pe-5">
           <li className="text-2xl">
             <a to={"/"}>Home</a>
+          </li>
+          <li className="text-2xl">
+            <a to={"/"}>Skills</a>
           </li>
           <li className="text-2xl">
             <a to={"/about"}>About</a>
