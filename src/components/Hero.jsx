@@ -6,10 +6,10 @@ function Hero() {
     <>
       <section className="bg-slate-800">
         <div className="container mx-auto p-4">
-          <div className="row flex flex-wrap items-center justify-center sm:flex-nowrap sm:flex-row gap-1 ">
+          <div className="row flex flex-col-reverse flex-wrap items-center justify-center sm:flex-nowrap sm:flex-row gap-1 ">
             {/* Social Media */}
             <div className="col flex-1">
-              <div className="row flex  sm:flex-wrap gap-6 me-3 ">
+              <div className="row flex sm:flex-col gap-6 my-5 sm:me-4 ">
                 <BsGithub className="text-5xl text-sky-200" />
                 <BsFacebook className="text-5xl text-sky-200" />
                 <BsInstagram className="text-5xl text-sky-200" />
@@ -17,16 +17,16 @@ function Hero() {
             </div>
             {/* Name and Info */}
             <div className="col flex-1 basis-full">
-              {/* <div className="row">
-                <h1 className="text-6xl text-blue-200">
+              <div className="row">
+                <h1 className="text-4xl text-center sm:text-left sm:text-6xl text-blue-200">
                   Hi! I am
                   <br />
-                  <span className="font-[poppins] text-blue-400 text-8xl">
+                  <span className="text-5xl font-[poppins] font-bold text-blue-400 sm:text-8xl">
                     Rain Christian Seguban
                   </span>
-                  <br />a Full Stack Web Developer
+                  <br />
                 </h1>
-                <p className="text-2xl text-blue-200 mt-9">
+                <p className="font-[montserrat] text-2xl text-blue-200 mt-5 text-justify sm:text-left">
                   I'm a Junior Full Stack Web Developer with a passion for
                   creating dynamic and user-friendly web applications.
                   Proficient in <span className="text-blue-500">HTML</span>,{" "}
@@ -47,11 +47,6 @@ function Hero() {
                     See my projects here!
                   </a>
                 </div>
-              </div> */}
-              <div className="row">
-                <div className="col">Logos</div>
-                <div className="col">Names and Info</div>
-                <div className="col">image</div>
               </div>
             </div>
             {/* IMAGE */}
