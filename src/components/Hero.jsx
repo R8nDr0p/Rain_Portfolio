@@ -64,6 +64,7 @@ function Hero() {
               </div>
             </div>
           </div>
+          <hr className="mx-6" />
         </div>
       </section>
     </>

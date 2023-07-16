@@ -20,7 +20,7 @@ function Skills() {
       //     backgroundImage: `url("https://cdn.pixabay.com/photo/2013/07/12/15/03/clouds-149344_1280.png")`,
       //   }}
     >
-      <div className="container mx-auto">
+      <div className="container mx-auto py-4">
         <div className="row flex justify-center">
           <div className="col flex flex-col gap-5">
             <h1 className="text-7xl sm:text-8xl text-blue-300 text-center">
@@ -31,7 +31,7 @@ function Skills() {
             </h3>
           </div>
         </div>
-        <div className="m-8 row flex flex-col gap-10 flex-wrap sm:items-start sm:justify-around sm:flex-row sm:flex-nowrap">
+        <div className="p-8 row flex flex-col gap-10 flex-wrap sm:items-start sm:justify-around sm:flex-row sm:flex-nowrap">
           <div className="col flex flex-col items-center">
             <h2 className="text-blue-200 text-5xl underline">Front-End</h2>
             <div className="row flex flex-col items-center space-x-4">
@@ -80,6 +80,7 @@ function Skills() {
             </div>
           </div>
         </div>
+        <hr className="mx-6" />
       </div>
     </section>
   );
