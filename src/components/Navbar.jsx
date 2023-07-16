@@ -17,13 +17,13 @@ function Navbar() {
       <div className="flex">
         <ul className="list-none sm:flex hidden items-center space-x-4 pe-5">
           <li className="text-2xl">
-            <NavLink to={"/"}>Home</NavLink>
+            <a to={"/"}>Home</a>
           </li>
           <li className="text-2xl">
-            <NavLink to={"/about"}>About</NavLink>
+            <a to={"/about"}>About</a>
           </li>
           <li className="text-2xl">
-            <NavLink to={"/contact"}>Contact</NavLink>
+            <a to={"/contact"}>Contact</a>
           </li>
         </ul>
       </div>
@@ -45,13 +45,13 @@ function Navbar() {
           <div className="sm:hidden absolute top-[4rem] right-0 w-full bg-blue-200 p-6 rounded-lg flex justify-center shadow-xl">
             <ul>
               <li className="text-2xl mb-4 cursor-pointer">
-                <NavLink to={"/"}>Home</NavLink>
+                <a to={"/"}>Home</a>
               </li>
               <li className="text-2xl mb-4 cursor-pointer">
-                <NavLink to={"/about"}>About</NavLink>
+                <a to={"/about"}>About</a>
               </li>
               <li className="text-2xl mb-4 cursor-pointer">
-                <NavLink to={"/contact"}>Contact</NavLink>
+                <a to={"/contact"}>Contact</a>
               </li>
             </ul>
           </div>
