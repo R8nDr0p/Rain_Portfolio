@@ -10,13 +10,13 @@ function Hero() {
             {/* Social Media */}
             <div className="col flex-1">
               <div className="row flex sm:flex-col gap-6 my-5 sm:me-4 ">
-                <a href="https://github.com/R8nDr0p">
+                <a href="https://github.com/R8nDr0p" target="_blank">
                   <BsGithub className="text-5xl text-sky-200" />
                 </a>
-                <a href="https://www.facebook.com/r8indr0p/">
+                <a href="https://www.facebook.com/r8indr0p/" target="_blank">
                   <BsFacebook className="text-5xl text-sky-200" />
                 </a>
-                <a href="https://www.instagram.com/niardrop/">
+                <a href="https://www.instagram.com/niardrop/" target="_blank">
                   <BsInstagram className="text-5xl text-sky-200" />
                 </a>
               </div>
