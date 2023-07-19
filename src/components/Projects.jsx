@@ -2,6 +2,7 @@ import React, { useState } from "react";
 import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
 import { PiDotOutlineDuotone, PiDotDuotone } from "react-icons/pi";
 import project2Pic from "../assets/mp2.png";
+import project1Pic from "../assets/mp1.png";
 function Projects() {
   const slides = [
     {
@@ -15,6 +16,9 @@ function Projects() {
     },
     {
       url: project2Pic,
+    },
+    {
+      url: project1Pic,
     },
   ];
 
@@ -39,10 +43,12 @@ function Projects() {
         </h1>
       </div>
       <div className="max-w-[1400px] h-[780px] m-auto py-16 px-4 relative group">
-        <div
-          style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-          className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
-        ></div>
+        <a href="https://keebs-gold.vercel.app/" target="_blank">
+          <div
+            style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
+            className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+          ></div>
+        </a>
         {/* left arrow */}
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactLeft onClick={prevSlide} size={30} />
