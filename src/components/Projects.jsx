@@ -1,5 +1,9 @@
 import React, { useState } from "react";
-import { BsChevronCompactLeft, BsChevronCompactRight } from "react-icons/bs";
+import {
+  BsChevronCompactLeft,
+  BsChevronCompactRight,
+  BsReddit,
+} from "react-icons/bs";
 import { PiDotOutlineDuotone, PiDotDuotone } from "react-icons/pi";
 import project2Pic from "../assets/mp2.png";
 import project1Pic from "../assets/mp1.png";
@@ -7,18 +11,25 @@ function Projects() {
   const slides = [
     {
       url: "https://cdn.pixabay.com/photo/2013/07/12/15/03/clouds-149344_1280.png",
+      link: "https://anime-hub-omega.vercel.app/",
     },
     {
       url: "https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_1280.jpg",
+      link: "https://keebs-gold.vercel.app/",
     },
     {
       url: "https://cdn.pixabay.com/photo/2016/10/25/12/28/thunderstorm-1768742_640.jpg",
+      link: "https://anime-hub-omega.vercel.app/",
     },
     {
       url: project2Pic,
+      link: "https://anime-hub-omega.vercel.app/",
+      redditLink: "https://github.com/R8nDr0p/anime_hub",
     },
     {
       url: project1Pic,
+      link: "https://keebs-gold.vercel.app/",
+      redditLink: "https://github.com/R8nDr0p/project-1",
     },
   ];
 
@@ -43,7 +54,7 @@ function Projects() {
         </h1>
       </div>
       <div className="max-w-[1400px] h-[780px] m-auto py-16 px-4 relative group">
-        <a href="https://keebs-gold.vercel.app/" target="_blank">
+        <a href={slides[currentIndex].link} target="_blank">
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
             className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
@@ -57,6 +68,13 @@ function Projects() {
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
+        {slides[currentIndex].redditLink && (
+          <div className="hidden group-hover:block absolute top-[85%] left-[50%] bg-black/20 opacity-80 rounded px-4 py-1">
+            <a href={slides[currentIndex].redditLink} target="_blank">
+              <BsReddit className="text-3xl text-slate-800" />
+            </a>
+          </div>
+        )}
       </div>
       <div className="flex top-4 justify-center py-2">
         {slides.map((slide, slideIndex) => (
