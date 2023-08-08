@@ -2,10 +2,10 @@ import React, { useState } from "react";
 import {
   BsChevronCompactLeft,
   BsChevronCompactRight,
-  BsReddit,
+  BsGithub,
 } from "react-icons/bs";
 import { PiDotOutlineDuotone, PiDotDuotone } from "react-icons/pi";
-import project2Pic from "../assets/mp2.png";
+import project2Pic from "../assets/Anime-Hub.png";
 import project1Pic from "../assets/mp1.png";
 function Projects() {
   const slides = [
@@ -24,12 +24,12 @@ function Projects() {
     {
       url: project2Pic,
       link: "https://anime-hub-omega.vercel.app/",
-      redditLink: "https://github.com/R8nDr0p/anime_hub",
+      gitHubLink: "https://github.com/R8nDr0p/anime_hub",
     },
     {
       url: project1Pic,
       link: "https://keebs-gold.vercel.app/",
-      redditLink: "https://github.com/R8nDr0p/project-1",
+      gitHubLink: "https://github.com/R8nDr0p/project-1",
     },
   ];
 
@@ -68,10 +68,10 @@ function Projects() {
         <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
-        {slides[currentIndex].redditLink && (
+        {slides[currentIndex].gitHubLink && (
           <div className="hidden group-hover:block absolute top-[85%] left-[50%] bg-black/20 opacity-80 rounded px-4 py-1">
-            <a href={slides[currentIndex].redditLink} target="_blank">
-              <BsReddit className="text-3xl text-slate-800" />
+            <a href={slides[currentIndex].gitHubLink} target="_blank">
+              <BsGithub className="text-3xl text-[#dbeafe]" />
             </a>
           </div>
         )}
