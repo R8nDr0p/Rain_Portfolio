@@ -57,7 +57,7 @@ function Projects() {
         <a href={slides[currentIndex].link} target="_blank">
           <div
             style={{ backgroundImage: `url(${slides[currentIndex].url})` }}
-            className="w-full h-full rounded-2xl bg-center bg-cover duration-500"
+            className="w-full h-full rounded-2xl bg-top bg-cover duration-500"
           ></div>
         </a>
         {/* left arrow */}
