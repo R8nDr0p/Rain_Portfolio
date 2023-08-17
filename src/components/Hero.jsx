@@ -4,7 +4,7 @@ import { BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 function Hero() {
   return (
     <>
-      <section className="bg-slate-800">
+      <section id="hero-section" className="bg-slate-800 pt-12">
         <div className="container mx-auto p-4">
           <div className="row flex flex-col-reverse flex-wrap items-center justify-center sm:flex-nowrap sm:flex-row gap-1 ">
             {/* Social Media */}

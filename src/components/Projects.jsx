@@ -7,23 +7,12 @@ import {
 import { PiDotOutlineDuotone, PiDotDuotone } from "react-icons/pi";
 import project2Pic from "../assets/Anime-Hub.png";
 import project1Pic from "../assets/mp1.png";
+
 function Projects() {
   const slides = [
     {
-      url: "https://cdn.pixabay.com/photo/2013/07/12/15/03/clouds-149344_1280.png",
-      link: "https://anime-hub-omega.vercel.app/",
-    },
-    {
-      url: "https://cdn.pixabay.com/photo/2019/08/19/07/45/corgi-4415649_1280.jpg",
-      link: "https://keebs-gold.vercel.app/",
-    },
-    {
-      url: "https://cdn.pixabay.com/photo/2016/10/25/12/28/thunderstorm-1768742_640.jpg",
-      link: "https://anime-hub-omega.vercel.app/",
-    },
-    {
       url: project2Pic,
-      link: "https://anime-hub-omega.vercel.app/",
+      link: "https://anime-website-rose.vercel.app/",
       gitHubLink: "https://github.com/R8nDr0p/anime_hub",
     },
     {
@@ -47,9 +36,9 @@ function Projects() {
   };
 
   return (
-    <section className="bg-slate-800 py-8">
+    <section id="project-section" className="bg-slate-800 pt-14">
       <div className="div">
-        <h1 className="text-center text-5xl text-blue-200 underline">
+        <h1 className="text-center text-6xl text-blue-200 underline">
           Projects
         </h1>
       </div>
@@ -61,11 +50,11 @@ function Projects() {
           ></div>
         </a>
         {/* left arrow */}
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] left-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer hover:scale-110 duration-100">
           <BsChevronCompactLeft onClick={prevSlide} size={30} />
         </div>
         {/* right arrow */}
-        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer">
+        <div className="hidden group-hover:block absolute top-[50%] -translate-x-0 translate-y-[50%] right-5 text-2xl rounded-full p-2 bg-black/20 text-white cursor-pointer hover:scale-110 duration-100">
           <BsChevronCompactRight onClick={nextSlide} size={30} />
         </div>
         {slides[currentIndex].gitHubLink && (

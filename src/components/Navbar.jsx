@@ -2,10 +2,20 @@ import { FaBars } from "react-icons/fa";
 import { FaRegCircleXmark } from "react-icons/fa6";
 import React, { useState } from "react";
 import "../styles/navbar.css";
+import { NavLink as PageLink, useNavigate } from "react-router-dom";
+import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
   const [show, setShow] = useState(false);
-
+  // const [isActive, setIsActive] = useState(false);
+  // const goToHome = () => {
+  //   setIsActive(true);
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  //   console.log(isActive);
+  // };
   return (
     <nav className="flex justify-between py-3 bg-blue-100 sticky top-0">
       <div className="flex">
@@ -17,13 +27,45 @@ function Navbar() {
       <div className="flex">
         <ul className="list-none sm:flex hidden items-center space-x-4 pe-5">
           <li className="text-2xl">
-            <a to={"/"}>Home</a>
+            {/* <PageLink
+              to={"/"}
+              activeClassName="active"
+              isActive={isActive}
+              onClick={goToHome}
+            >
+              Home
+            </PageLink> */}
+            <ScrollLink
+              to="hero-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Home
+            </ScrollLink>
           </li>
           <li className="text-2xl">
-            <a to={"/"}>Skills</a>
+            <ScrollLink
+              to="skills-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Skills
+            </ScrollLink>
           </li>
           <li className="text-2xl">
-            <a to={"/about"}>About</a>
+            <ScrollLink
+              to="project-section"
+              spy={true}
+              smooth={true}
+              offset={0}
+              duration={500}
+            >
+              Projects
+            </ScrollLink>
           </li>
           <li className="text-2xl">
             <a to={"/contact"}>Contact</a>

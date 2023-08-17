@@ -14,7 +14,8 @@ import { FaLaravel } from "react-icons/fa";
 function Skills() {
   return (
     <section
-      className="bg-slate-800"
+      id="skills-section"
+      className="bg-slate-800 p-7"
       //   className="py-10 bg-cover bg-center bg-no-repeat"
       //   style={{
       //     backgroundImage: `url("https://cdn.pixabay.com/photo/2013/07/12/15/03/clouds-149344_1280.png")`,
