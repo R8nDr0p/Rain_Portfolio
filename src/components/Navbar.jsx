@@ -16,8 +16,30 @@ function Navbar() {
   //   });
   //   console.log(isActive);
   // };
+  const links = [
+    {
+      name: "Home",
+      section: "hero-section",
+    },
+    {
+      name: "Skills",
+      section: "skills-section",
+    },
+    {
+      name: "Projects",
+      section: "project-section",
+    },
+    {
+      name: "About",
+      section: "about-section",
+    },
+    {
+      name: "Contact",
+      section: "contact-section",
+    },
+  ];
   return (
-    <nav className="flex justify-between py-3 bg-blue-100 sticky top-0">
+    <nav className="flex justify-between py-3 bg-blue-100 sticky top-0 z-50">
       <div className="flex">
         <p className="text-3xl ps-5 font-[poppins] font-bold ">Rain&nbsp;</p>
         <span className="font-[montserrat] text-3xl sm:block hidden">
@@ -26,50 +48,26 @@ function Navbar() {
       </div>
       <div className="flex">
         <ul className="list-none sm:flex hidden items-center space-x-4 pe-5">
-          <li className="text-2xl">
-            {/* <PageLink
-              to={"/"}
-              activeClassName="active"
-              isActive={isActive}
-              onClick={goToHome}
-            >
-              Home
-            </PageLink> */}
-            <ScrollLink
-              to="hero-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Home
-            </ScrollLink>
-          </li>
-          <li className="text-2xl">
-            <ScrollLink
-              to="skills-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Skills
-            </ScrollLink>
-          </li>
-          <li className="text-2xl">
-            <ScrollLink
-              to="project-section"
-              spy={true}
-              smooth={true}
-              offset={0}
-              duration={500}
-            >
-              Projects
-            </ScrollLink>
-          </li>
-          <li className="text-2xl">
-            <a to={"/contact"}>Contact</a>
-          </li>
+          {links.map((link, index) => {
+            return (
+              <li
+                className="cursor-pointer hover:text-teal-300 hover:bg-slate-800 rounded-md px-1 py-1 hover:scale-105 transition-all duration-150"
+                key={index}
+              >
+                <ScrollLink
+                  className="text-2xl"
+                  to={link.section}
+                  spy={true}
+                  smooth={true}
+                  offset={0}
+                  duration={500}
+                  key={index}
+                >
+                  {link.name}
+                </ScrollLink>
+              </li>
+            );
+          })}
         </ul>
       </div>
       {/* This is the mobile view */}
@@ -89,15 +87,23 @@ function Navbar() {
         {show === false && (
           <div className="sm:hidden absolute top-[4rem] right-0 w-full bg-blue-200 p-6 rounded-lg flex justify-center shadow-xl">
             <ul>
-              <li className="text-2xl mb-4 cursor-pointer">
-                <a to={"/"}>Home</a>
-              </li>
-              <li className="text-2xl mb-4 cursor-pointer">
-                <a to={"/about"}>About</a>
-              </li>
-              <li className="text-2xl mb-4 cursor-pointer">
-                <a to={"/contact"}>Contact</a>
-              </li>
+              {links.map((link, index) => {
+                return (
+                  <li className="py-5 cursor-pointer">
+                    <ScrollLink
+                      className="text-2xl"
+                      to={link.section}
+                      spy={true}
+                      smooth={true}
+                      offset={0}
+                      duration={500}
+                      key={index}
+                    >
+                      {link.name}
+                    </ScrollLink>
+                  </li>
+                );
+              })}
             </ul>
           </div>
         )}
