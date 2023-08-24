@@ -1,0 +1,16 @@
+form label{
+    margin-bottom: 1rem;
+}
+.message__input{
+    width: 15rem;
+    transition: all 0.5s ease-in-out;
+}
+.message__input:focus{
+    width: 100% ;
+}
+.input__button{
+    margin-top: 2rem;
+    padding: 0.25rem;
+    border: solid;
+    border-radius: .35rem;
+}
