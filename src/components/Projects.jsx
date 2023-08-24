@@ -7,18 +7,39 @@ import {
 import { PiDotOutlineDuotone, PiDotDuotone } from "react-icons/pi";
 import project2Pic from "../assets/Anime-Hub.png";
 import project1Pic from "../assets/mp1.png";
+import project3Pic from "../assets/mp3.png";
+import project4Pic from "../assets/mp4.png";
 
 function Projects() {
   const slides = [
     {
-      url: project2Pic,
-      link: "https://anime-website-rose.vercel.app/",
-      gitHubLink: "https://github.com/R8nDr0p/anime_hub",
-    },
-    {
       url: project1Pic,
       link: "https://keebs-gold.vercel.app/",
       gitHubLink: "https://github.com/R8nDr0p/project-1",
+      synopsis:
+        "This is one of my 1st projects showcasing how an online website should look like, it is an online store that is about keyboard or ergonomic keyboards to help your wrists and avoid RSI",
+    },
+
+    {
+      url: project2Pic,
+      link: "https://anime-website-rose.vercel.app/",
+      gitHubLink: "https://github.com/R8nDr0p/anime_hub",
+      synopsis:
+        "This is a  React project to showcase my API manipulation skills and my abilities to adapt and learn fast to use ReactJS effectively and efficiently",
+    },
+    {
+      url: project3Pic,
+      link: "https://music-player-project-xi.vercel.app/",
+      gitHubLink: "https://github.com/R8nDr0p/Music-Player-Project",
+      synopsis:
+        "This projects showcases my DOM manipulation and how I utilize Vanilla Javascript to make a working mp3 player!.",
+    },
+    {
+      url: project4Pic,
+      link: "https://tic-tac-toe-qsvn.vercel.app/",
+      gitHubLink: "https://github.com/R8nDr0p/Tic-tac-toe",
+      synopsis:
+        "This is my first projects using express JS or making a full stack application its just a very simple tic-tac-toe game that need two players to play. You can make two accounts to test the application by using a private tab and a regular tab to differentiate.",
     },
   ];
 
@@ -34,7 +55,6 @@ function Projects() {
     const index = isLastSlide ? 0 : currentIndex + 1;
     setCurrentIndex(index);
   };
-
   return (
     <section id="project-section" className="bg-slate-800 pt-14">
       <div className="div">
@@ -64,6 +84,11 @@ function Projects() {
             </a>
           </div>
         )}
+      </div>
+      <div className="flex justify-center items-center">
+        <p className="text-3xl text-center text-teal-300">
+          {slides[currentIndex].synopsis}
+        </p>
       </div>
       <div className="flex top-4 justify-center py-2">
         {slides.map((slide, slideIndex) => (
