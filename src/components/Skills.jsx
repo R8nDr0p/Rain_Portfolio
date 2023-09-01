@@ -1,4 +1,3 @@
-import React from "react";
 import { AiOutlineHtml5 } from "react-icons/ai";
 import {
   BiLogoCss3,
@@ -15,7 +14,7 @@ function Skills() {
   return (
     <section
       id="skills-section"
-      className="bg-slate-800 p-7"
+      className="bg-slate-800 p-14"
       //   className="py-10 bg-cover bg-center bg-no-repeat"
       //   style={{
       //     backgroundImage: `url("https://cdn.pixabay.com/photo/2013/07/12/15/03/clouds-149344_1280.png")`,
@@ -28,6 +27,7 @@ function Skills() {
               Skills
             </h1>
             <h3 className="text-5xl sm:text-6xl text-blue-200 text-center">
+              {/* eslint-disable-next-line react/no-unescaped-entities */}
               What I'm capable of?
             </h3>
           </div>
