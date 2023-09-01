@@ -1,8 +1,7 @@
 import { FaBars } from "react-icons/fa";
 import { FaRegCircleXmark } from "react-icons/fa6";
-import React, { useState } from "react";
+import { useState } from "react";
 import "../styles/navbar.css";
-import { NavLink as PageLink, useNavigate } from "react-router-dom";
 import { Link as ScrollLink } from "react-scroll";
 
 function Navbar() {
@@ -89,6 +88,7 @@ function Navbar() {
             <ul>
               {links.map((link, index) => {
                 return (
+                    // eslint-disable-next-line react/jsx-key
                   <li className="py-5 cursor-pointer">
                     <ScrollLink
                       className="text-2xl"
