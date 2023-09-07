@@ -9,6 +9,7 @@ import project2Pic from "../assets/Anime-Hub.png";
 import project1Pic from "../assets/mp1.png";
 import project3Pic from "../assets/mp3.png";
 import project4Pic from "../assets/mp4.png";
+import project5Pic from "../assets/mp5.png";
 
 function Projects() {
   const slides = [
@@ -17,7 +18,7 @@ function Projects() {
       link: "https://keebs-gold.vercel.app/",
       gitHubLink: "https://github.com/R8nDr0p/project-1",
       synopsis:
-        "This is one of my 1st projects showcasing how an online website should look like, it is an online store that is about keyboard or ergonomic keyboards to help your wrists and avoid RSI",
+        "This is one of my initial projects, serving as a conceptual representation of an ideal online store. It focuses on ergonomic keyboards, designed to promote wrist health and prevent Repetitive Strain Injury (RSI) while providing a comfortable shopping experience.",
     },
 
     {
@@ -25,21 +26,28 @@ function Projects() {
       link: "https://anime-website-rose.vercel.app/",
       gitHubLink: "https://github.com/R8nDr0p/anime_hub",
       synopsis:
-        "This is a  React project to showcase my API manipulation skills and my abilities to adapt and learn fast to use ReactJS effectively and efficiently",
+        "This React project serves as a dynamic showcase of my adept API manipulation skills, reflecting my rapid adaptability and proficiency in harnessing the power of ReactJS to create efficient and effective web applications.",
     },
     {
       url: project3Pic,
       link: "https://music-player-project-xi.vercel.app/",
       gitHubLink: "https://github.com/R8nDr0p/Music-Player-Project",
       synopsis:
-        "This projects showcases my DOM manipulation and how I utilize Vanilla Javascript to make a working mp3 player!.",
+        "This project demonstrates my expertise in DOM manipulation and showcases my ability to harness Vanilla JavaScript to create a fully functional MP3 player.",
     },
     {
       url: project4Pic,
       link: "https://tic-tac-toe-qsvn.vercel.app/",
       gitHubLink: "https://github.com/R8nDr0p/Tic-tac-toe",
       synopsis:
-        "This is my first projects using express JS or making a full stack application its just a very simple tic-tac-toe game that need two players to play. You can make two accounts to test the application by using a private tab and a regular tab to differentiate.",
+        "This project marks my foray into Express.js and full-stack application development. It's a straightforward yet engaging Tic-Tac-Toe game designed for two players. Feel free to test the application by creating two distinct accounts—one in a private tab and another in a regular tab for a seamless gaming experience.",
+    },
+    {
+      url: project5Pic,
+      link: "https://clock-project-snowy.vercel.app/",
+      gitHubLink: "https://github.com/R8nDr0p/Clock-Project",
+      synopsis:
+        "This project is a testament to my expertise in DOM manipulation, showcasing the creation of a visually captivating analog clock set within the iconic Rolex Day-Date dial.",
     },
   ];
 
