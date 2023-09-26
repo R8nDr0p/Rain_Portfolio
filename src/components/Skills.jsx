@@ -101,7 +101,7 @@ function Skills() {
             {/* </div> */}
           </div>
           <div className="laptop__keyboard w-[100%] h-[16px] rounded-b-2xl bg-gray-500 flex justify-center">
-            <div className="laptop__latch h-[6px] w-8 bg-gray-700"></div>
+            <div className="laptop__latch h-[8px] w-12 bg-gray-700 rounded-b-lg"></div>
           </div>
         </div>
       </div>
