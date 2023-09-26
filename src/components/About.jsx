@@ -1,5 +1,5 @@
 import React from "react";
-
+import resume from "../assets/Copy of Resume Template.pdf"
 const About = () => {
   return (
     <section id="about-section" className="bg-slate-800 pt-20">
@@ -23,7 +23,7 @@ const About = () => {
               willing to learn new things.
             </p>
             <br />
-            <p className="text-center text-4xl text-blue-300">
+            <p className="text-center text-4xl text-blue-300 font-bold">
               <span className="text-8xl text-teal-500">"</span>I see myself not
               through past achievements, but through future aspirations. I value
               personality over taught skills. I embrace learning, pushing my
@@ -37,6 +37,21 @@ const About = () => {
               innovation with functionality
               <span className="text-8xl text-teal-500">"</span>
             </p>
+            <div className="m-3 flex justify-center space-x-2">
+              <a
+                href={resume}
+                download
+                className=" btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 transition duration-200"
+              >
+                Download CV
+              </a>
+              <a
+                href="https://assets.kodego.ph/public/isa/b52goDyLX1HtOoCIWcKA7FkmdTxrvWYXETtXojZi.pdf"
+                className=" btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 transition duration-200"
+              >
+                View Certificate
+              </a>
+            </div>
           </div>
           <hr className="mx-6" />
         </div>

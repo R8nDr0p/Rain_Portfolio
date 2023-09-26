@@ -4,8 +4,8 @@ import { BsGithub, BsFacebook, BsInstagram } from "react-icons/bs";
 function Hero() {
   return (
     <>
-      <section id="hero-section" className="bg-slate-800 pt-12">
-        <div className="container mx-auto p-4">
+      <section id="hero-section" className="bg-slate-800 pt-16">
+        <div className="container mx-auto">
           <div className="row flex flex-col-reverse flex-wrap items-center justify-center sm:flex-nowrap sm:flex-row gap-1 ">
             {/* Social Media */}
             <div className="col flex-1">
@@ -48,9 +48,12 @@ function Hero() {
                   your digital vision to life!
                 </p>
                 <br />
-                <div className="flex justify-center">
-                  <a className="btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 transition duration-200">
+                <div className="flex justify-center space-x-4">
+                  <a className="btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 hover:mx-6 transition duration-200">
                     See my projects here!
+                  </a>
+                  <a className={`btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 hover:mx-8 transition duration-200`}>
+                    Download CV
                   </a>
                 </div>
               </div>
