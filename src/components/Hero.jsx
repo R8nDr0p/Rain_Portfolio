@@ -10,20 +10,20 @@ function Hero() {
             {/* Social Media */}
             <div className="col flex-1">
               <div className="row flex sm:flex-col gap-6 my-5 sm:me-4 ">
-                <a href="https://github.com/R8nDr0p" target="_blank">
+                <a href="https://github.com/R8nDr0p" target="_blank" rel="noreferrer">
                   <BsGithub className="text-5xl text-sky-200" />
                 </a>
-                <a href="https://www.facebook.com/r8indr0p/" target="_blank">
+                <a href="https://www.facebook.com/r8indr0p/" target="_blank" rel="noreferrer">
                   <BsFacebook className="text-5xl text-sky-200" />
                 </a>
-                <a href="https://www.instagram.com/niardrop/" target="_blank">
+                <a href="https://www.instagram.com/niardrop/" target="_blank" rel="noreferrer">
                   <BsInstagram className="text-5xl text-sky-200" />
                 </a>
               </div>
             </div>
             {/* Name and Info */}
             <div className="col flex-1 basis-full">
-              <div className="row">
+              <div className="row p-2">
                 <h1 className="text-4xl text-center sm:text-left sm:text-6xl text-blue-200">
                   Hi! I am
                   <br />
@@ -32,7 +32,7 @@ function Hero() {
                   </span>
                   <br />
                 </h1>
-                <p className="font-[montserrat] text-2xl text-blue-200 mt-5 text-justify sm:text-left">
+                <p className="font-[montserrat] text-xl md:text-2xl text-blue-200 mt-5 text-justify sm:text-left">
                   I'm a Junior Full Stack Web Developer with a passion for
                   creating dynamic and user-friendly web applications.
                   Proficient in <span className="text-blue-500">HTML</span>,{" "}
@@ -49,10 +49,10 @@ function Hero() {
                 </p>
                 <br />
                 <div className="flex justify-center space-x-4">
-                  <a className="btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 hover:mx-6 transition duration-200">
+                  <a className="btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 hover:mx-6 transition duration-200 text-center">
                     See my projects here!
                   </a>
-                  <a className={`btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 hover:mx-8 transition duration-200`}>
+                  <a className={`btn my-3 py-2 px-4 rounded text-2xl text-blue-100 bg-cyan-700 shadow-lg shadow-cyan-500/25 hover:text-white hover:shadow-cyan-500/100 hover:scale-125 hover:mx-8 transition duration-200 text-center`}>
                     Download CV
                   </a>
                 </div>
